@@ -20,7 +20,8 @@ class SimpleCNN:
         
         self.y_ = tf.placeholder(tf.float32, [None, 10])
         # visualize Y
-        #tf.summary.text('label', "Hello World")
+        label_str = tf.as_string(self.y_)
+        tf.summary.text('label', label_str)
 
         # Build the graph for the deep net
         y_conv, self.keep_prob = deepnn(self.x)
