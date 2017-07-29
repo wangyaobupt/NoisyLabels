@@ -55,7 +55,7 @@ def convertCorrectLabelToCorruptedLabel(correctLabel):
 if __name__ == '__main__':
     mnist = tf.examples.tutorials.mnist.input_data.read_data_sets('MNIST_DATA/', one_hot=True)
     #print 'DEBUG: in main: before add noise', mnist.train.labels[0]
-    addRandomNoiseToTrainingSet(mnist,0.01)
+    addRandomNoiseToTrainingSet(mnist,0.8)
     #print 'DEBUG: in main: after add noise', mnist.train.labels[0]
     cnn = SimpleCNN(1e-4)
     cnn.train(mnist)

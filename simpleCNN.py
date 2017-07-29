@@ -56,7 +56,7 @@ class SimpleCNN:
             if i % 100 == 0:
                 train_accuracy = self.accuracy.eval(session=self.sess, feed_dict={
                     self.x: batch[0], self.y_: batch[1],self.keep_prob: 1.0})
-                print('step %d, training accuracy %g' % (i, train_accuracy))
+                #print('step %d, training accuracy %g' % (i, train_accuracy))
                 merged = self.sess.run(self.merged, feed_dict={
                     self.x: batch[0], self.y_: batch[1],self.keep_prob: 1.0})
                 self.writer.add_summary(merged, i)
