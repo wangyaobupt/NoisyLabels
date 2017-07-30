@@ -2,6 +2,7 @@ import tensorflow as tf
 import os
 import os.path
 from mnist_deep import deepnn
+from datetime import datetime
 
 '''
 SimpleCNN is a wrapper class of MNIST CNN demo code
@@ -49,23 +50,30 @@ class SimpleCNN:
         self.sess = tf.Session()
         self.writer = tf.summary.FileWriter(log_path, self.sess.graph)
         self.sess.run(tf.global_variables_initializer())
-    
+   
+    def __del__(self):
+	print 'close session and file writer when object is deleted'
+        self.sess.close()
+        self.writer.close()
+ 
     def train(self, mnist):
-        for i in range(20000):
-            batch = mnist.train.next_batch(50)
+        for i in range(2000):
+            batch = mnist.train.next_batch(1000)
             if i % 100 == 0:
                 train_accuracy = self.accuracy.eval(session=self.sess, feed_dict={
-                    self.x: batch[0], self.y_: batch[1],self.keep_prob: 1.0})
-                #print('step %d, training accuracy %g' % (i, train_accuracy))
+                    self.x: batch[0], self.y_: batch[1], self.keep_prob:1.0})
+                print(datetime.now().isoformat(), 'step %d, training accuracy %g' % (i, train_accuracy))
                 merged = self.sess.run(self.merged, feed_dict={
-                    self.x: batch[0], self.y_: batch[1],self.keep_prob: 1.0})
+                    self.x: batch[0], self.y_: batch[1], self.keep_prob:1.0})
                 self.writer.add_summary(merged, i)
                 self.writer.flush()
             self.train_step.run(session=self.sess, feed_dict={self.x: batch[0], self.y_: batch[1], self.keep_prob: 0.5})
 
     def test(self, mnist):
-        print('test accuracy %g' % self.accuracy.eval(session=self.sess, feed_dict={
-            self.x: mnist.test.images, self.y_: mnist.test.labels, self.keep_prob: 1.0}))
+        acc_result = self.accuracy.eval(session=self.sess, feed_dict={
+            self.x: mnist.test.images, self.y_: mnist.test.labels, self.keep_prob: 1.0})
+	print(datetime.now().isoformat(), 'test accuracy %g' % acc_result)
+	return acc_result
 
 def removeFileInDir(targetDir): 
     for file in os.listdir(targetDir): 
