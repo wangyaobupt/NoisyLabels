@@ -2,9 +2,10 @@ import tensorflow as tf
 import numpy as np
 from simpleCNN import SimpleCNN
 from tensorflow.contrib.learn.python.learn.datasets.mnist import DataSet
-
+from datetime import datetime
 '''
-Test case 2: use random noise on training set, no noise on validation set, evaluating the degrade of model of different noise level
+Test case 2: use random noise (i.e. white noise) on training set, no noise on validation set, evaluating the degrade of model of different noise level
+the noise is 'white', meaning the error pattern is uniformly distributed. For example, the correct label for an image is '1', when noise is applied, it has equal opportunity to be changed to 0,2,3,4,5,6,7,8,9
 '''
 
 # Add random noise to MNIST training set
@@ -52,11 +53,21 @@ def convertCorrectLabelToCorruptedLabel(correctLabel):
     result[target_value] = 1.0 
     return result
 
-if __name__ == '__main__':
+def testOnCertainNoiseLevel(noiseLevel):
+    print '', datetime.now().isoformat(), 'noise = ', noiseLevel
     mnist = tf.examples.tutorials.mnist.input_data.read_data_sets('MNIST_DATA/', one_hot=True)
-    #print 'DEBUG: in main: before add noise', mnist.train.labels[0]
-    addRandomNoiseToTrainingSet(mnist,0.8)
-    #print 'DEBUG: in main: after add noise', mnist.train.labels[0]
+    addRandomNoiseToTrainingSet(mnist, noiseLevel)
     cnn = SimpleCNN(1e-4)
     cnn.train(mnist)
-    cnn.test(mnist)
+    result = cnn.test(mnist)
+    del cnn
+    return result
+
+if __name__ == '__main__':
+    noiseList = np.linspace(0,1,100)
+    result = {}
+    for noise in noiseList:
+        result[str(noise)] = testOnCertainNoiseLevel(noise)
+    
+    for noise in noiseList:
+	print '',noise,', ',result[str(noise)]
