@@ -63,7 +63,9 @@ def testOnCertainNoiseLevel(noiseLevel, cnn_instance):
     return result
 
 if __name__ == '__main__':
-    noiseList = np.linspace(0,1,100)
+    noiseList = np.arange(0, 0.7, 0.1)
+    noiseList = np.append(noiseList,  np.arange(0.7,1,0.02))
+    #print noiseList
     result = {}
     cnn = SimpleCNN(1e-4)
     for noise in noiseList:
