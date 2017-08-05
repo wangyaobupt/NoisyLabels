@@ -53,21 +53,21 @@ def convertCorrectLabelToCorruptedLabel(correctLabel):
     result[target_value] = 1.0 
     return result
 
-def testOnCertainNoiseLevel(noiseLevel):
+def testOnCertainNoiseLevel(noiseLevel, cnn_instance):
     print '', datetime.now().isoformat(), 'noise = ', noiseLevel
     mnist = tf.examples.tutorials.mnist.input_data.read_data_sets('MNIST_DATA/', one_hot=True)
     addRandomNoiseToTrainingSet(mnist, noiseLevel)
-    cnn = SimpleCNN(1e-4)
-    cnn.train(mnist)
-    result = cnn.test(mnist)
-    del cnn
+    cnn_instance.reset()
+    cnn_instance.train(mnist)
+    result = cnn_instance.test(mnist)
     return result
 
 if __name__ == '__main__':
     noiseList = np.linspace(0,1,100)
     result = {}
+    cnn = SimpleCNN(1e-4)
     for noise in noiseList:
-        result[str(noise)] = testOnCertainNoiseLevel(noise)
+        result[str(noise)] = testOnCertainNoiseLevel(noise, cnn)
     
     for noise in noiseList:
-	print '',noise,', ',result[str(noise)]
+        print '',noise,', ',result[str(noise)]

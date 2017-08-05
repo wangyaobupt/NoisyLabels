@@ -88,7 +88,7 @@ def deepnn(x):
   # Dropout - controls the complexity of the model, prevents co-adaptation of
   # features.
   with tf.name_scope('dropout'):
-    keep_prob = tf.placeholder(tf.float32)
+    keep_prob = tf.placeholder(tf.float32,shape=[] )
     h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)
 
   # Map the 1024 features to 10 classes, one for each digit

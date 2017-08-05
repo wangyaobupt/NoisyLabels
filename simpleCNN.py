@@ -51,10 +51,9 @@ class SimpleCNN:
         self.writer = tf.summary.FileWriter(log_path, self.sess.graph)
         self.sess.run(tf.global_variables_initializer())
    
-    def __del__(self):
-	print 'close session and file writer when object is deleted'
-        self.sess.close()
-        self.writer.close()
+    def reset(self):
+        self.sess.run(tf.global_variables_initializer())
+        print 'Re-Init the graph parameter'
  
     def train(self, mnist):
         for i in range(2000):
@@ -72,8 +71,8 @@ class SimpleCNN:
     def test(self, mnist):
         acc_result = self.accuracy.eval(session=self.sess, feed_dict={
             self.x: mnist.test.images, self.y_: mnist.test.labels, self.keep_prob: 1.0})
-	print(datetime.now().isoformat(), 'test accuracy %g' % acc_result)
-	return acc_result
+        print(datetime.now().isoformat(), 'test accuracy %g' % acc_result)
+        return acc_result
 
 def removeFileInDir(targetDir): 
     for file in os.listdir(targetDir): 
