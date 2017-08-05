@@ -1,0 +1,645 @@
+Delete Old Log FIle: tf_writer/events.out.tfevents.1501905705.VM-19-142-ubuntu
+ 2017-08-05T12:02:08.355422 noise =  0.0
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:02:09.650871', 'step 0, training accuracy 0.118')
+('2017-08-05T12:02:14.672344', 'step 100, training accuracy 0.902')
+('2017-08-05T12:02:19.649959', 'step 200, training accuracy 0.952')
+('2017-08-05T12:02:24.636510', 'step 300, training accuracy 0.966')
+('2017-08-05T12:02:29.612034', 'step 400, training accuracy 0.976')
+('2017-08-05T12:02:34.569640', 'step 500, training accuracy 0.973')
+('2017-08-05T12:02:39.457973', 'step 600, training accuracy 0.976')
+('2017-08-05T12:02:44.425624', 'step 700, training accuracy 0.975')
+('2017-08-05T12:02:49.386108', 'step 800, training accuracy 0.973')
+('2017-08-05T12:02:54.352167', 'step 900, training accuracy 0.987')
+('2017-08-05T12:02:59.328753', 'step 1000, training accuracy 0.989')
+('2017-08-05T12:03:04.314904', 'step 1100, training accuracy 0.991')
+('2017-08-05T12:03:09.210596', 'step 1200, training accuracy 0.991')
+('2017-08-05T12:03:14.179808', 'step 1300, training accuracy 0.98')
+('2017-08-05T12:03:19.152526', 'step 1400, training accuracy 0.988')
+('2017-08-05T12:03:24.125868', 'step 1500, training accuracy 0.992')
+('2017-08-05T12:03:29.091819', 'step 1600, training accuracy 0.996')
+('2017-08-05T12:03:33.985141', 'step 1700, training accuracy 0.997')
+('2017-08-05T12:03:38.952066', 'step 1800, training accuracy 0.995')
+('2017-08-05T12:03:43.911690', 'step 1900, training accuracy 0.995')
+('2017-08-05T12:03:49.271720', 'test accuracy 0.9883')
+ 2017-08-05T12:03:49.272536 noise =  0.1
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:03:51.389654', 'step 0, training accuracy 0.085')
+('2017-08-05T12:03:56.283285', 'step 100, training accuracy 0.805')
+('2017-08-05T12:04:01.261302', 'step 200, training accuracy 0.879')
+('2017-08-05T12:04:06.235400', 'step 300, training accuracy 0.87')
+('2017-08-05T12:04:11.215417', 'step 400, training accuracy 0.873')
+('2017-08-05T12:04:16.179282', 'step 500, training accuracy 0.866')
+('2017-08-05T12:04:21.071784', 'step 600, training accuracy 0.893')
+('2017-08-05T12:04:26.036478', 'step 700, training accuracy 0.871')
+('2017-08-05T12:04:31.005572', 'step 800, training accuracy 0.886')
+('2017-08-05T12:04:35.973519', 'step 900, training accuracy 0.892')
+('2017-08-05T12:04:40.942812', 'step 1000, training accuracy 0.89')
+('2017-08-05T12:04:45.905749', 'step 1100, training accuracy 0.89')
+('2017-08-05T12:04:50.804112', 'step 1200, training accuracy 0.898')
+('2017-08-05T12:04:55.780235', 'step 1300, training accuracy 0.893')
+('2017-08-05T12:05:00.750936', 'step 1400, training accuracy 0.876')
+('2017-08-05T12:05:05.734155', 'step 1500, training accuracy 0.899')
+('2017-08-05T12:05:10.704101', 'step 1600, training accuracy 0.9')
+('2017-08-05T12:05:15.601931', 'step 1700, training accuracy 0.887')
+('2017-08-05T12:05:20.572588', 'step 1800, training accuracy 0.889')
+('2017-08-05T12:05:25.547211', 'step 1900, training accuracy 0.885')
+('2017-08-05T12:05:30.628206', 'test accuracy 0.9845')
+ 2017-08-05T12:05:30.629467 noise =  0.2
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:05:34.283707', 'step 0, training accuracy 0.094')
+('2017-08-05T12:05:39.190586', 'step 100, training accuracy 0.724')
+('2017-08-05T12:05:44.161433', 'step 200, training accuracy 0.763')
+('2017-08-05T12:05:49.136976', 'step 300, training accuracy 0.74')
+('2017-08-05T12:05:54.106978', 'step 400, training accuracy 0.759')
+('2017-08-05T12:05:59.075772', 'step 500, training accuracy 0.764')
+('2017-08-05T12:06:03.979491', 'step 600, training accuracy 0.778')
+('2017-08-05T12:06:08.949897', 'step 700, training accuracy 0.775')
+('2017-08-05T12:06:13.919445', 'step 800, training accuracy 0.789')
+('2017-08-05T12:06:18.893488', 'step 900, training accuracy 0.811')
+('2017-08-05T12:06:23.863233', 'step 1000, training accuracy 0.768')
+('2017-08-05T12:06:28.830175', 'step 1100, training accuracy 0.816')
+('2017-08-05T12:06:33.725174', 'step 1200, training accuracy 0.797')
+('2017-08-05T12:06:38.689288', 'step 1300, training accuracy 0.788')
+('2017-08-05T12:06:43.656510', 'step 1400, training accuracy 0.817')
+('2017-08-05T12:06:48.626962', 'step 1500, training accuracy 0.81')
+('2017-08-05T12:06:53.594743', 'step 1600, training accuracy 0.785')
+('2017-08-05T12:06:58.489354', 'step 1700, training accuracy 0.781')
+('2017-08-05T12:07:03.461534', 'step 1800, training accuracy 0.76')
+('2017-08-05T12:07:08.436292', 'step 1900, training accuracy 0.805')
+('2017-08-05T12:07:13.521969', 'test accuracy 0.9823')
+ 2017-08-05T12:07:13.523161 noise =  0.3
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:07:19.022252', 'step 0, training accuracy 0.101')
+('2017-08-05T12:07:23.924102', 'step 100, training accuracy 0.594')
+('2017-08-05T12:07:28.897002', 'step 200, training accuracy 0.667')
+('2017-08-05T12:07:33.871107', 'step 300, training accuracy 0.643')
+('2017-08-05T12:07:38.841854', 'step 400, training accuracy 0.661')
+('2017-08-05T12:07:43.804065', 'step 500, training accuracy 0.673')
+('2017-08-05T12:07:48.695767', 'step 600, training accuracy 0.699')
+('2017-08-05T12:07:53.660641', 'step 700, training accuracy 0.676')
+('2017-08-05T12:07:58.628719', 'step 800, training accuracy 0.675')
+('2017-08-05T12:08:03.605632', 'step 900, training accuracy 0.689')
+('2017-08-05T12:08:08.586877', 'step 1000, training accuracy 0.673')
+('2017-08-05T12:08:13.555013', 'step 1100, training accuracy 0.698')
+('2017-08-05T12:08:18.452490', 'step 1200, training accuracy 0.71')
+('2017-08-05T12:08:23.419315', 'step 1300, training accuracy 0.686')
+('2017-08-05T12:08:28.391402', 'step 1400, training accuracy 0.683')
+('2017-08-05T12:08:33.361200', 'step 1500, training accuracy 0.7')
+('2017-08-05T12:08:38.330254', 'step 1600, training accuracy 0.682')
+('2017-08-05T12:08:43.229169', 'step 1700, training accuracy 0.715')
+('2017-08-05T12:08:48.197145', 'step 1800, training accuracy 0.692')
+('2017-08-05T12:08:53.166258', 'step 1900, training accuracy 0.682')
+('2017-08-05T12:08:58.248166', 'test accuracy 0.9803')
+ 2017-08-05T12:08:58.249438 noise =  0.4
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:09:05.550413', 'step 0, training accuracy 0.087')
+('2017-08-05T12:09:10.458483', 'step 100, training accuracy 0.544')
+('2017-08-05T12:09:15.427419', 'step 200, training accuracy 0.564')
+('2017-08-05T12:09:20.400154', 'step 300, training accuracy 0.579')
+('2017-08-05T12:09:25.367484', 'step 400, training accuracy 0.548')
+('2017-08-05T12:09:30.333558', 'step 500, training accuracy 0.581')
+('2017-08-05T12:09:35.225928', 'step 600, training accuracy 0.568')
+('2017-08-05T12:09:40.192509', 'step 700, training accuracy 0.591')
+('2017-08-05T12:09:45.160476', 'step 800, training accuracy 0.599')
+('2017-08-05T12:09:50.135003', 'step 900, training accuracy 0.566')
+('2017-08-05T12:09:55.106223', 'step 1000, training accuracy 0.585')
+('2017-08-05T12:10:00.074911', 'step 1100, training accuracy 0.571')
+('2017-08-05T12:10:04.972719', 'step 1200, training accuracy 0.568')
+('2017-08-05T12:10:09.947532', 'step 1300, training accuracy 0.569')
+('2017-08-05T12:10:14.920206', 'step 1400, training accuracy 0.591')
+('2017-08-05T12:10:19.896268', 'step 1500, training accuracy 0.585')
+('2017-08-05T12:10:24.863581', 'step 1600, training accuracy 0.577')
+('2017-08-05T12:10:29.762874', 'step 1700, training accuracy 0.615')
+('2017-08-05T12:10:34.735228', 'step 1800, training accuracy 0.61')
+('2017-08-05T12:10:39.705041', 'step 1900, training accuracy 0.581')
+('2017-08-05T12:10:44.784875', 'test accuracy 0.9748')
+ 2017-08-05T12:10:44.786164 noise =  0.5
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:10:53.549222', 'step 0, training accuracy 0.109')
+('2017-08-05T12:10:58.462602', 'step 100, training accuracy 0.419')
+('2017-08-05T12:11:03.434015', 'step 200, training accuracy 0.469')
+('2017-08-05T12:11:08.402342', 'step 300, training accuracy 0.445')
+('2017-08-05T12:11:13.370241', 'step 400, training accuracy 0.438')
+('2017-08-05T12:11:18.332766', 'step 500, training accuracy 0.471')
+('2017-08-05T12:11:23.225364', 'step 600, training accuracy 0.478')
+('2017-08-05T12:11:28.195989', 'step 700, training accuracy 0.502')
+('2017-08-05T12:11:33.161958', 'step 800, training accuracy 0.47')
+('2017-08-05T12:11:38.133458', 'step 900, training accuracy 0.512')
+('2017-08-05T12:11:43.107627', 'step 1000, training accuracy 0.489')
+('2017-08-05T12:11:48.078505', 'step 1100, training accuracy 0.499')
+('2017-08-05T12:11:52.984435', 'step 1200, training accuracy 0.493')
+('2017-08-05T12:11:57.949498', 'step 1300, training accuracy 0.504')
+('2017-08-05T12:12:02.917348', 'step 1400, training accuracy 0.501')
+('2017-08-05T12:12:07.885012', 'step 1500, training accuracy 0.476')
+('2017-08-05T12:12:12.860564', 'step 1600, training accuracy 0.504')
+('2017-08-05T12:12:17.764840', 'step 1700, training accuracy 0.5')
+('2017-08-05T12:12:22.737990', 'step 1800, training accuracy 0.442')
+('2017-08-05T12:12:27.706877', 'step 1900, training accuracy 0.487')
+('2017-08-05T12:12:32.776788', 'test accuracy 0.9694')
+ 2017-08-05T12:12:32.778005 noise =  0.6
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:12:41.777045', 'step 0, training accuracy 0.097')
+('2017-08-05T12:12:46.685861', 'step 100, training accuracy 0.311')
+('2017-08-05T12:12:51.647794', 'step 200, training accuracy 0.368')
+('2017-08-05T12:12:56.613065', 'step 300, training accuracy 0.344')
+('2017-08-05T12:13:01.583579', 'step 400, training accuracy 0.387')
+('2017-08-05T12:13:06.552440', 'step 500, training accuracy 0.345')
+('2017-08-05T12:13:11.446468', 'step 600, training accuracy 0.363')
+('2017-08-05T12:13:16.410999', 'step 700, training accuracy 0.372')
+('2017-08-05T12:13:21.380126', 'step 800, training accuracy 0.397')
+('2017-08-05T12:13:26.344247', 'step 900, training accuracy 0.382')
+('2017-08-05T12:13:31.309766', 'step 1000, training accuracy 0.386')
+('2017-08-05T12:13:36.281385', 'step 1100, training accuracy 0.381')
+('2017-08-05T12:13:41.180516', 'step 1200, training accuracy 0.396')
+('2017-08-05T12:13:46.145739', 'step 1300, training accuracy 0.374')
+('2017-08-05T12:13:51.113447', 'step 1400, training accuracy 0.395')
+('2017-08-05T12:13:56.080590', 'step 1500, training accuracy 0.398')
+('2017-08-05T12:14:01.047358', 'step 1600, training accuracy 0.406')
+('2017-08-05T12:14:05.943664', 'step 1700, training accuracy 0.401')
+('2017-08-05T12:14:10.912035', 'step 1800, training accuracy 0.386')
+('2017-08-05T12:14:15.874594', 'step 1900, training accuracy 0.385')
+('2017-08-05T12:14:20.957344', 'test accuracy 0.9605')
+ 2017-08-05T12:14:20.958617 noise =  0.7
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:14:31.058399', 'step 0, training accuracy 0.113')
+('2017-08-05T12:14:35.957784', 'step 100, training accuracy 0.214')
+('2017-08-05T12:14:40.920728', 'step 200, training accuracy 0.249')
+('2017-08-05T12:14:45.881510', 'step 300, training accuracy 0.286')
+('2017-08-05T12:14:50.838597', 'step 400, training accuracy 0.264')
+('2017-08-05T12:14:55.796812', 'step 500, training accuracy 0.258')
+('2017-08-05T12:15:00.692270', 'step 600, training accuracy 0.287')
+('2017-08-05T12:15:05.655719', 'step 700, training accuracy 0.248')
+('2017-08-05T12:15:10.625088', 'step 800, training accuracy 0.301')
+('2017-08-05T12:15:15.585384', 'step 900, training accuracy 0.305')
+('2017-08-05T12:15:20.551612', 'step 1000, training accuracy 0.296')
+('2017-08-05T12:15:25.512360', 'step 1100, training accuracy 0.291')
+('2017-08-05T12:15:30.404553', 'step 1200, training accuracy 0.3')
+('2017-08-05T12:15:35.370042', 'step 1300, training accuracy 0.326')
+('2017-08-05T12:15:40.334696', 'step 1400, training accuracy 0.286')
+('2017-08-05T12:15:45.297388', 'step 1500, training accuracy 0.277')
+('2017-08-05T12:15:50.263124', 'step 1600, training accuracy 0.316')
+('2017-08-05T12:15:55.153774', 'step 1700, training accuracy 0.306')
+('2017-08-05T12:16:00.117702', 'step 1800, training accuracy 0.303')
+('2017-08-05T12:16:05.087629', 'step 1900, training accuracy 0.299')
+('2017-08-05T12:16:10.161639', 'test accuracy 0.9316')
+ 2017-08-05T12:16:10.162663 noise =  0.72
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:16:20.165576', 'step 0, training accuracy 0.098')
+('2017-08-05T12:16:25.075898', 'step 100, training accuracy 0.194')
+('2017-08-05T12:16:30.032237', 'step 200, training accuracy 0.222')
+('2017-08-05T12:16:34.994093', 'step 300, training accuracy 0.255')
+('2017-08-05T12:16:39.955582', 'step 400, training accuracy 0.268')
+('2017-08-05T12:16:44.913734', 'step 500, training accuracy 0.271')
+('2017-08-05T12:16:49.803785', 'step 600, training accuracy 0.278')
+('2017-08-05T12:16:54.764987', 'step 700, training accuracy 0.297')
+('2017-08-05T12:16:59.726486', 'step 800, training accuracy 0.265')
+('2017-08-05T12:17:04.690830', 'step 900, training accuracy 0.26')
+('2017-08-05T12:17:09.654150', 'step 1000, training accuracy 0.263')
+('2017-08-05T12:17:14.613811', 'step 1100, training accuracy 0.274')
+('2017-08-05T12:17:19.506920', 'step 1200, training accuracy 0.288')
+('2017-08-05T12:17:24.472015', 'step 1300, training accuracy 0.252')
+('2017-08-05T12:17:29.431564', 'step 1400, training accuracy 0.289')
+('2017-08-05T12:17:34.391137', 'step 1500, training accuracy 0.303')
+('2017-08-05T12:17:39.350171', 'step 1600, training accuracy 0.275')
+('2017-08-05T12:17:44.236012', 'step 1700, training accuracy 0.282')
+('2017-08-05T12:17:49.196864', 'step 1800, training accuracy 0.273')
+('2017-08-05T12:17:54.160909', 'step 1900, training accuracy 0.281')
+('2017-08-05T12:17:59.237195', 'test accuracy 0.9134')
+ 2017-08-05T12:17:59.238437 noise =  0.74
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:18:09.282484', 'step 0, training accuracy 0.108')
+('2017-08-05T12:18:14.188450', 'step 100, training accuracy 0.189')
+('2017-08-05T12:18:19.155728', 'step 200, training accuracy 0.21')
+('2017-08-05T12:18:24.132710', 'step 300, training accuracy 0.226')
+('2017-08-05T12:18:29.097479', 'step 400, training accuracy 0.224')
+('2017-08-05T12:18:34.057489', 'step 500, training accuracy 0.235')
+('2017-08-05T12:18:38.950738', 'step 600, training accuracy 0.238')
+('2017-08-05T12:18:43.912919', 'step 700, training accuracy 0.232')
+('2017-08-05T12:18:48.878103', 'step 800, training accuracy 0.245')
+('2017-08-05T12:18:53.838838', 'step 900, training accuracy 0.245')
+('2017-08-05T12:18:58.806611', 'step 1000, training accuracy 0.236')
+('2017-08-05T12:19:03.774149', 'step 1100, training accuracy 0.227')
+('2017-08-05T12:19:08.675056', 'step 1200, training accuracy 0.228')
+('2017-08-05T12:19:13.638779', 'step 1300, training accuracy 0.258')
+('2017-08-05T12:19:18.603429', 'step 1400, training accuracy 0.271')
+('2017-08-05T12:19:23.571410', 'step 1500, training accuracy 0.267')
+('2017-08-05T12:19:28.539832', 'step 1600, training accuracy 0.263')
+('2017-08-05T12:19:33.430673', 'step 1700, training accuracy 0.256')
+('2017-08-05T12:19:38.402197', 'step 1800, training accuracy 0.285')
+('2017-08-05T12:19:43.368093', 'step 1900, training accuracy 0.255')
+('2017-08-05T12:19:48.445510', 'test accuracy 0.8913')
+ 2017-08-05T12:19:48.446752 noise =  0.76
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:19:58.595475', 'step 0, training accuracy 0.103')
+('2017-08-05T12:20:03.512069', 'step 100, training accuracy 0.153')
+('2017-08-05T12:20:08.474403', 'step 200, training accuracy 0.181')
+('2017-08-05T12:20:13.436399', 'step 300, training accuracy 0.172')
+('2017-08-05T12:20:18.391697', 'step 400, training accuracy 0.225')
+('2017-08-05T12:20:23.354364', 'step 500, training accuracy 0.211')
+('2017-08-05T12:20:28.244799', 'step 600, training accuracy 0.223')
+('2017-08-05T12:20:33.207108', 'step 700, training accuracy 0.228')
+('2017-08-05T12:20:38.166611', 'step 800, training accuracy 0.229')
+('2017-08-05T12:20:43.124992', 'step 900, training accuracy 0.233')
+('2017-08-05T12:20:48.084975', 'step 1000, training accuracy 0.214')
+('2017-08-05T12:20:53.045072', 'step 1100, training accuracy 0.24')
+('2017-08-05T12:20:57.929163', 'step 1200, training accuracy 0.259')
+('2017-08-05T12:21:02.891422', 'step 1300, training accuracy 0.219')
+('2017-08-05T12:21:07.851935', 'step 1400, training accuracy 0.257')
+('2017-08-05T12:21:12.808335', 'step 1500, training accuracy 0.236')
+('2017-08-05T12:21:17.768657', 'step 1600, training accuracy 0.259')
+('2017-08-05T12:21:22.658034', 'step 1700, training accuracy 0.233')
+('2017-08-05T12:21:27.619336', 'step 1800, training accuracy 0.239')
+('2017-08-05T12:21:32.574536', 'step 1900, training accuracy 0.253')
+('2017-08-05T12:21:37.642672', 'test accuracy 0.8592')
+ 2017-08-05T12:21:37.643959 noise =  0.78
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:21:48.142096', 'step 0, training accuracy 0.098')
+('2017-08-05T12:21:53.044174', 'step 100, training accuracy 0.144')
+('2017-08-05T12:21:58.012324', 'step 200, training accuracy 0.145')
+('2017-08-05T12:22:02.972479', 'step 300, training accuracy 0.182')
+('2017-08-05T12:22:07.932150', 'step 400, training accuracy 0.227')
+('2017-08-05T12:22:12.889855', 'step 500, training accuracy 0.209')
+('2017-08-05T12:22:17.776150', 'step 600, training accuracy 0.221')
+('2017-08-05T12:22:22.740854', 'step 700, training accuracy 0.212')
+('2017-08-05T12:22:27.706904', 'step 800, training accuracy 0.202')
+('2017-08-05T12:22:32.668535', 'step 900, training accuracy 0.202')
+('2017-08-05T12:22:37.635851', 'step 1000, training accuracy 0.188')
+('2017-08-05T12:22:42.597040', 'step 1100, training accuracy 0.225')
+('2017-08-05T12:22:47.482900', 'step 1200, training accuracy 0.225')
+('2017-08-05T12:22:52.444852', 'step 1300, training accuracy 0.215')
+('2017-08-05T12:22:57.409598', 'step 1400, training accuracy 0.194')
+('2017-08-05T12:23:02.376468', 'step 1500, training accuracy 0.218')
+('2017-08-05T12:23:07.336891', 'step 1600, training accuracy 0.217')
+('2017-08-05T12:23:12.221557', 'step 1700, training accuracy 0.217')
+('2017-08-05T12:23:17.185453', 'step 1800, training accuracy 0.233')
+('2017-08-05T12:23:22.149525', 'step 1900, training accuracy 0.204')
+('2017-08-05T12:23:27.223508', 'test accuracy 0.8022')
+ 2017-08-05T12:23:27.224756 noise =  0.8
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:23:37.724431', 'step 0, training accuracy 0.103')
+('2017-08-05T12:23:42.620344', 'step 100, training accuracy 0.126')
+('2017-08-05T12:23:47.572999', 'step 200, training accuracy 0.171')
+('2017-08-05T12:23:52.524498', 'step 300, training accuracy 0.154')
+('2017-08-05T12:23:57.478836', 'step 400, training accuracy 0.203')
+('2017-08-05T12:24:02.436016', 'step 500, training accuracy 0.191')
+('2017-08-05T12:24:07.316344', 'step 600, training accuracy 0.183')
+('2017-08-05T12:24:12.269645', 'step 700, training accuracy 0.195')
+('2017-08-05T12:24:17.225041', 'step 800, training accuracy 0.179')
+('2017-08-05T12:24:22.189199', 'step 900, training accuracy 0.173')
+('2017-08-05T12:24:27.147865', 'step 1000, training accuracy 0.198')
+('2017-08-05T12:24:32.102514', 'step 1100, training accuracy 0.206')
+('2017-08-05T12:24:36.986565', 'step 1200, training accuracy 0.211')
+('2017-08-05T12:24:41.946094', 'step 1300, training accuracy 0.212')
+('2017-08-05T12:24:46.908628', 'step 1400, training accuracy 0.233')
+('2017-08-05T12:24:51.868550', 'step 1500, training accuracy 0.228')
+('2017-08-05T12:24:56.832425', 'step 1600, training accuracy 0.212')
+('2017-08-05T12:25:01.719133', 'step 1700, training accuracy 0.197')
+('2017-08-05T12:25:06.676301', 'step 1800, training accuracy 0.219')
+('2017-08-05T12:25:11.637056', 'step 1900, training accuracy 0.232')
+('2017-08-05T12:25:16.705281', 'test accuracy 0.7355')
+ 2017-08-05T12:25:16.706522 noise =  0.82
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:25:27.100986', 'step 0, training accuracy 0.102')
+('2017-08-05T12:25:32.006783', 'step 100, training accuracy 0.132')
+('2017-08-05T12:25:36.959702', 'step 200, training accuracy 0.155')
+('2017-08-05T12:25:41.913773', 'step 300, training accuracy 0.167')
+('2017-08-05T12:25:46.941503', 'step 400, training accuracy 0.173')
+('2017-08-05T12:25:51.902258', 'step 500, training accuracy 0.195')
+('2017-08-05T12:25:56.887877', 'step 600, training accuracy 0.171')
+('2017-08-05T12:26:01.983748', 'step 700, training accuracy 0.202')
+('2017-08-05T12:26:06.942533', 'step 800, training accuracy 0.173')
+('2017-08-05T12:26:11.902969', 'step 900, training accuracy 0.187')
+('2017-08-05T12:26:16.893830', 'step 1000, training accuracy 0.195')
+('2017-08-05T12:26:21.863494', 'step 1100, training accuracy 0.163')
+('2017-08-05T12:26:26.751303', 'step 1200, training accuracy 0.2')
+('2017-08-05T12:26:31.709512', 'step 1300, training accuracy 0.201')
+('2017-08-05T12:26:36.886146', 'step 1400, training accuracy 0.215')
+('2017-08-05T12:26:42.066954', 'step 1500, training accuracy 0.203')
+('2017-08-05T12:26:47.251264', 'step 1600, training accuracy 0.196')
+('2017-08-05T12:26:52.359727', 'step 1700, training accuracy 0.186')
+('2017-08-05T12:26:57.545732', 'step 1800, training accuracy 0.199')
+('2017-08-05T12:27:02.734704', 'step 1900, training accuracy 0.222')
+('2017-08-05T12:27:08.024858', 'test accuracy 0.5742')
+ 2017-08-05T12:27:08.026123 noise =  0.84
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:27:18.881892', 'step 0, training accuracy 0.094')
+('2017-08-05T12:27:24.017407', 'step 100, training accuracy 0.115')
+('2017-08-05T12:27:29.197005', 'step 200, training accuracy 0.155')
+('2017-08-05T12:27:34.208389', 'step 300, training accuracy 0.167')
+('2017-08-05T12:27:39.210828', 'step 400, training accuracy 0.155')
+('2017-08-05T12:27:44.175497', 'step 500, training accuracy 0.174')
+('2017-08-05T12:27:49.073139', 'step 600, training accuracy 0.179')
+('2017-08-05T12:27:54.034462', 'step 700, training accuracy 0.184')
+('2017-08-05T12:27:58.992875', 'step 800, training accuracy 0.2')
+('2017-08-05T12:28:03.954193', 'step 900, training accuracy 0.187')
+('2017-08-05T12:28:08.912766', 'step 1000, training accuracy 0.163')
+('2017-08-05T12:28:13.877785', 'step 1100, training accuracy 0.208')
+('2017-08-05T12:28:18.768667', 'step 1200, training accuracy 0.204')
+('2017-08-05T12:28:23.732551', 'step 1300, training accuracy 0.185')
+('2017-08-05T12:28:28.706468', 'step 1400, training accuracy 0.223')
+('2017-08-05T12:28:33.778233', 'step 1500, training accuracy 0.209')
+('2017-08-05T12:28:38.959000', 'step 1600, training accuracy 0.2')
+('2017-08-05T12:28:44.064501', 'step 1700, training accuracy 0.185')
+('2017-08-05T12:28:49.244127', 'step 1800, training accuracy 0.249')
+('2017-08-05T12:28:54.240218', 'step 1900, training accuracy 0.219')
+('2017-08-05T12:28:59.308208', 'test accuracy 0.346')
+ 2017-08-05T12:28:59.309445 noise =  0.86
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:29:10.293249', 'step 0, training accuracy 0.105')
+('2017-08-05T12:29:15.363905', 'step 100, training accuracy 0.132')
+('2017-08-05T12:29:20.464375', 'step 200, training accuracy 0.148')
+('2017-08-05T12:29:25.427428', 'step 300, training accuracy 0.139')
+('2017-08-05T12:29:30.384178', 'step 400, training accuracy 0.167')
+('2017-08-05T12:29:35.341040', 'step 500, training accuracy 0.155')
+('2017-08-05T12:29:40.233670', 'step 600, training accuracy 0.15')
+('2017-08-05T12:29:45.396132', 'step 700, training accuracy 0.158')
+('2017-08-05T12:29:50.567091', 'step 800, training accuracy 0.175')
+('2017-08-05T12:29:55.744936', 'step 900, training accuracy 0.193')
+('2017-08-05T12:30:00.922427', 'step 1000, training accuracy 0.169')
+('2017-08-05T12:30:06.105549', 'step 1100, training accuracy 0.184')
+('2017-08-05T12:30:11.217226', 'step 1200, training accuracy 0.181')
+('2017-08-05T12:30:16.207544', 'step 1300, training accuracy 0.182')
+('2017-08-05T12:30:21.175688', 'step 1400, training accuracy 0.179')
+('2017-08-05T12:30:26.143301', 'step 1500, training accuracy 0.176')
+('2017-08-05T12:30:31.108410', 'step 1600, training accuracy 0.192')
+('2017-08-05T12:30:35.995330', 'step 1700, training accuracy 0.2')
+('2017-08-05T12:30:40.957137', 'step 1800, training accuracy 0.188')
+('2017-08-05T12:30:45.963181', 'step 1900, training accuracy 0.214')
+('2017-08-05T12:30:51.255549', 'test accuracy 0.2138')
+ 2017-08-05T12:30:51.256805 noise =  0.88
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:31:02.149467', 'step 0, training accuracy 0.105')
+('2017-08-05T12:31:07.278694', 'step 100, training accuracy 0.127')
+('2017-08-05T12:31:12.456713', 'step 200, training accuracy 0.138')
+('2017-08-05T12:31:17.639048', 'step 300, training accuracy 0.132')
+('2017-08-05T12:31:22.818888', 'step 400, training accuracy 0.155')
+('2017-08-05T12:31:27.997056', 'step 500, training accuracy 0.177')
+('2017-08-05T12:31:33.098445', 'step 600, training accuracy 0.172')
+('2017-08-05T12:31:38.274422', 'step 700, training accuracy 0.148')
+('2017-08-05T12:31:43.451513', 'step 800, training accuracy 0.196')
+('2017-08-05T12:31:48.630368', 'step 900, training accuracy 0.177')
+('2017-08-05T12:31:53.797577', 'step 1000, training accuracy 0.177')
+('2017-08-05T12:31:58.976493', 'step 1100, training accuracy 0.179')
+('2017-08-05T12:32:04.083520', 'step 1200, training accuracy 0.171')
+('2017-08-05T12:32:09.262671', 'step 1300, training accuracy 0.174')
+('2017-08-05T12:32:14.443379', 'step 1400, training accuracy 0.176')
+('2017-08-05T12:32:19.623080', 'step 1500, training accuracy 0.183')
+('2017-08-05T12:32:24.807033', 'step 1600, training accuracy 0.199')
+('2017-08-05T12:32:29.918999', 'step 1700, training accuracy 0.22')
+('2017-08-05T12:32:35.101964', 'step 1800, training accuracy 0.193')
+('2017-08-05T12:32:40.059902', 'step 1900, training accuracy 0.201')
+('2017-08-05T12:32:45.124402', 'test accuracy 0.0744')
+ 2017-08-05T12:32:45.125705 noise =  0.9
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:32:56.133724', 'step 0, training accuracy 0.098')
+('2017-08-05T12:33:01.240844', 'step 100, training accuracy 0.125')
+('2017-08-05T12:33:06.376613', 'step 200, training accuracy 0.137')
+('2017-08-05T12:33:11.467281', 'step 300, training accuracy 0.162')
+('2017-08-05T12:33:16.648980', 'step 400, training accuracy 0.14')
+('2017-08-05T12:33:21.701022', 'step 500, training accuracy 0.162')
+('2017-08-05T12:33:26.592131', 'step 600, training accuracy 0.177')
+('2017-08-05T12:33:31.648754', 'step 700, training accuracy 0.185')
+('2017-08-05T12:33:36.606075', 'step 800, training accuracy 0.189')
+('2017-08-05T12:33:41.563510', 'step 900, training accuracy 0.168')
+('2017-08-05T12:33:46.519635', 'step 1000, training accuracy 0.158')
+('2017-08-05T12:33:51.477512', 'step 1100, training accuracy 0.191')
+('2017-08-05T12:33:56.362009', 'step 1200, training accuracy 0.186')
+('2017-08-05T12:34:01.424966', 'step 1300, training accuracy 0.194')
+('2017-08-05T12:34:06.608116', 'step 1400, training accuracy 0.194')
+('2017-08-05T12:34:11.635190', 'step 1500, training accuracy 0.169')
+('2017-08-05T12:34:16.602403', 'step 1600, training accuracy 0.18')
+('2017-08-05T12:34:21.490128', 'step 1700, training accuracy 0.176')
+('2017-08-05T12:34:26.449576', 'step 1800, training accuracy 0.181')
+('2017-08-05T12:34:31.409523', 'step 1900, training accuracy 0.205')
+('2017-08-05T12:34:36.474304', 'test accuracy 0.027')
+ 2017-08-05T12:34:36.475586 noise =  0.92
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:34:46.972801', 'step 0, training accuracy 0.111')
+('2017-08-05T12:34:51.958682', 'step 100, training accuracy 0.126')
+('2017-08-05T12:34:56.921704', 'step 200, training accuracy 0.132')
+('2017-08-05T12:35:01.881985', 'step 300, training accuracy 0.154')
+('2017-08-05T12:35:06.840224', 'step 400, training accuracy 0.17')
+('2017-08-05T12:35:11.798767', 'step 500, training accuracy 0.157')
+('2017-08-05T12:35:16.689712', 'step 600, training accuracy 0.177')
+('2017-08-05T12:35:21.650135', 'step 700, training accuracy 0.165')
+('2017-08-05T12:35:26.617143', 'step 800, training accuracy 0.183')
+('2017-08-05T12:35:31.573884', 'step 900, training accuracy 0.182')
+('2017-08-05T12:35:36.527027', 'step 1000, training accuracy 0.182')
+('2017-08-05T12:35:41.486914', 'step 1100, training accuracy 0.156')
+('2017-08-05T12:35:46.379003', 'step 1200, training accuracy 0.171')
+('2017-08-05T12:35:51.347084', 'step 1300, training accuracy 0.185')
+('2017-08-05T12:35:56.308990', 'step 1400, training accuracy 0.197')
+('2017-08-05T12:36:01.273716', 'step 1500, training accuracy 0.203')
+('2017-08-05T12:36:06.348269', 'step 1600, training accuracy 0.194')
+('2017-08-05T12:36:11.455514', 'step 1700, training accuracy 0.179')
+('2017-08-05T12:36:16.638563', 'step 1800, training accuracy 0.172')
+('2017-08-05T12:36:21.819148', 'step 1900, training accuracy 0.201')
+('2017-08-05T12:36:27.117154', 'test accuracy 0.0109')
+ 2017-08-05T12:36:27.118451 noise =  0.94
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:36:37.841989', 'step 0, training accuracy 0.09')
+('2017-08-05T12:36:42.968966', 'step 100, training accuracy 0.1')
+('2017-08-05T12:36:48.151898', 'step 200, training accuracy 0.142')
+('2017-08-05T12:36:53.324497', 'step 300, training accuracy 0.146')
+('2017-08-05T12:36:58.509036', 'step 400, training accuracy 0.161')
+('2017-08-05T12:37:03.692189', 'step 500, training accuracy 0.177')
+('2017-08-05T12:37:08.799589', 'step 600, training accuracy 0.165')
+('2017-08-05T12:37:13.966922', 'step 700, training accuracy 0.166')
+('2017-08-05T12:37:19.122907', 'step 800, training accuracy 0.181')
+('2017-08-05T12:37:24.310368', 'step 900, training accuracy 0.186')
+('2017-08-05T12:37:29.503933', 'step 1000, training accuracy 0.189')
+('2017-08-05T12:37:34.681877', 'step 1100, training accuracy 0.182')
+('2017-08-05T12:37:39.787164', 'step 1200, training accuracy 0.188')
+('2017-08-05T12:37:44.967162', 'step 1300, training accuracy 0.186')
+('2017-08-05T12:37:50.144247', 'step 1400, training accuracy 0.193')
+('2017-08-05T12:37:55.178694', 'step 1500, training accuracy 0.19')
+('2017-08-05T12:38:00.142443', 'step 1600, training accuracy 0.204')
+('2017-08-05T12:38:05.033451', 'step 1700, training accuracy 0.214')
+('2017-08-05T12:38:09.992109', 'step 1800, training accuracy 0.179')
+('2017-08-05T12:38:14.948883', 'step 1900, training accuracy 0.189')
+('2017-08-05T12:38:20.014304', 'test accuracy 0.0056')
+ 2017-08-05T12:38:20.015567 noise =  0.96
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:38:30.760638', 'step 0, training accuracy 0.108')
+('2017-08-05T12:38:35.659114', 'step 100, training accuracy 0.129')
+('2017-08-05T12:38:40.614346', 'step 200, training accuracy 0.165')
+('2017-08-05T12:38:45.566732', 'step 300, training accuracy 0.155')
+('2017-08-05T12:38:50.521789', 'step 400, training accuracy 0.154')
+('2017-08-05T12:38:55.476465', 'step 500, training accuracy 0.149')
+('2017-08-05T12:39:00.359466', 'step 600, training accuracy 0.174')
+('2017-08-05T12:39:05.321252', 'step 700, training accuracy 0.169')
+('2017-08-05T12:39:10.280787', 'step 800, training accuracy 0.178')
+('2017-08-05T12:39:15.243239', 'step 900, training accuracy 0.164')
+('2017-08-05T12:39:20.203193', 'step 1000, training accuracy 0.194')
+('2017-08-05T12:39:25.159768', 'step 1100, training accuracy 0.212')
+('2017-08-05T12:39:30.044854', 'step 1200, training accuracy 0.186')
+('2017-08-05T12:39:35.002053', 'step 1300, training accuracy 0.176')
+('2017-08-05T12:39:39.962443', 'step 1400, training accuracy 0.232')
+('2017-08-05T12:39:44.923838', 'step 1500, training accuracy 0.205')
+('2017-08-05T12:39:49.883007', 'step 1600, training accuracy 0.183')
+('2017-08-05T12:39:54.768360', 'step 1700, training accuracy 0.212')
+('2017-08-05T12:39:59.722596', 'step 1800, training accuracy 0.197')
+('2017-08-05T12:40:04.684715', 'step 1900, training accuracy 0.215')
+('2017-08-05T12:40:09.758574', 'test accuracy 0.001')
+ 2017-08-05T12:40:09.759815 noise =  0.98
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:40:20.374957', 'step 0, training accuracy 0.103')
+('2017-08-05T12:40:25.272787', 'step 100, training accuracy 0.13')
+('2017-08-05T12:40:30.229234', 'step 200, training accuracy 0.132')
+('2017-08-05T12:40:35.185514', 'step 300, training accuracy 0.173')
+('2017-08-05T12:40:40.146481', 'step 400, training accuracy 0.172')
+('2017-08-05T12:40:45.099654', 'step 500, training accuracy 0.196')
+('2017-08-05T12:40:49.986199', 'step 600, training accuracy 0.161')
+('2017-08-05T12:40:54.942506', 'step 700, training accuracy 0.198')
+('2017-08-05T12:40:59.900927', 'step 800, training accuracy 0.176')
+('2017-08-05T12:41:04.860217', 'step 900, training accuracy 0.188')
+('2017-08-05T12:41:09.817514', 'step 1000, training accuracy 0.19')
+('2017-08-05T12:41:14.776291', 'step 1100, training accuracy 0.178')
+('2017-08-05T12:41:19.663562', 'step 1200, training accuracy 0.209')
+('2017-08-05T12:41:24.618464', 'step 1300, training accuracy 0.177')
+('2017-08-05T12:41:29.578907', 'step 1400, training accuracy 0.198')
+('2017-08-05T12:41:34.532259', 'step 1500, training accuracy 0.186')
+('2017-08-05T12:41:39.493411', 'step 1600, training accuracy 0.183')
+('2017-08-05T12:41:44.378570', 'step 1700, training accuracy 0.206')
+('2017-08-05T12:41:49.338273', 'step 1800, training accuracy 0.207')
+('2017-08-05T12:41:54.297799', 'step 1900, training accuracy 0.189')
+('2017-08-05T12:41:59.363736', 'test accuracy 0.0012')
+ 2017-08-05T12:41:59.364943 noise =  1.0
+Extracting MNIST_DATA/train-images-idx3-ubyte.gz
+Extracting MNIST_DATA/train-labels-idx1-ubyte.gz
+Extracting MNIST_DATA/t10k-images-idx3-ubyte.gz
+Extracting MNIST_DATA/t10k-labels-idx1-ubyte.gz
+Re-Init the graph parameter
+('2017-08-05T12:42:10.520281', 'step 0, training accuracy 0.085')
+('2017-08-05T12:42:15.425742', 'step 100, training accuracy 0.123')
+('2017-08-05T12:42:20.387434', 'step 200, training accuracy 0.166')
+('2017-08-05T12:42:25.349812', 'step 300, training accuracy 0.168')
+('2017-08-05T12:42:30.319797', 'step 400, training accuracy 0.162')
+('2017-08-05T12:42:35.282685', 'step 500, training accuracy 0.169')
+('2017-08-05T12:42:40.173067', 'step 600, training accuracy 0.159')
+('2017-08-05T12:42:45.137895', 'step 700, training accuracy 0.166')
+('2017-08-05T12:42:50.096193', 'step 800, training accuracy 0.18')
+('2017-08-05T12:42:55.055400', 'step 900, training accuracy 0.163')
+('2017-08-05T12:43:00.017729', 'step 1000, training accuracy 0.176')
+('2017-08-05T12:43:04.984398', 'step 1100, training accuracy 0.191')
+('2017-08-05T12:43:09.881450', 'step 1200, training accuracy 0.195')
+('2017-08-05T12:43:14.851273', 'step 1300, training accuracy 0.204')
+('2017-08-05T12:43:19.816920', 'step 1400, training accuracy 0.199')
+('2017-08-05T12:43:24.777324', 'step 1500, training accuracy 0.169')
+('2017-08-05T12:43:29.741877', 'step 1600, training accuracy 0.21')
+('2017-08-05T12:43:34.632470', 'step 1700, training accuracy 0.224')
+('2017-08-05T12:43:39.597575', 'step 1800, training accuracy 0.223')
+('2017-08-05T12:43:44.559656', 'step 1900, training accuracy 0.203')
+('2017-08-05T12:43:49.633681', 'test accuracy 0.0007')
+ 0.0 ,  0.9883
+ 0.1 ,  0.9845
+ 0.2 ,  0.9823
+ 0.3 ,  0.9803
+ 0.4 ,  0.9748
+ 0.5 ,  0.9694
+ 0.6 ,  0.9605
+ 0.7 ,  0.9316
+ 0.72 ,  0.9134
+ 0.74 ,  0.8913
+ 0.76 ,  0.8592
+ 0.78 ,  0.8022
+ 0.8 ,  0.7355
+ 0.82 ,  0.5742
+ 0.84 ,  0.346
+ 0.86 ,  0.2138
+ 0.88 ,  0.0744
+ 0.9 ,  0.027
+ 0.92 ,  0.0109
+ 0.94 ,  0.0056
+ 0.96 ,  0.001
+ 0.98 ,  0.0012
+ 1.0 ,  0.0007
