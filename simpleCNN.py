@@ -26,6 +26,8 @@ class SimpleCNN:
 
         # Build the graph for the deep net
         y_conv, self.keep_prob = deepnn(self.x)
+        self.output_prob_distribution = tf.nn.softmax(y_conv, name='out_prob_dist')
+        
 
         with tf.name_scope('loss'):
             cross_entropy = tf.nn.softmax_cross_entropy_with_logits(labels=self.y_,
@@ -37,7 +39,8 @@ class SimpleCNN:
             self.train_step = tf.train.AdamOptimizer(lr).minimize(cross_entropy)
 
         with tf.name_scope('accuracy'):
-            correct_prediction = tf.equal(tf.argmax(y_conv, 1), tf.argmax(self.y_, 1))
+            self.label = tf.argmax(self.y_, 1)
+            correct_prediction = tf.equal(tf.argmax(y_conv, 1), self.label)
             correct_prediction = tf.cast(correct_prediction, tf.float32)
             self.accuracy = tf.reduce_mean(correct_prediction)
             tf.summary.scalar('accuracy',self.accuracy)
@@ -57,16 +60,24 @@ class SimpleCNN:
  
     def train(self, mnist):
         for i in range(2000):
-            batch = mnist.train.next_batch(1000)
+            batch = mnist.train.next_batch(1600)
             if i % 100 == 0:
-                train_accuracy = self.accuracy.eval(session=self.sess, feed_dict={
+                train_accuracy, prob_dist, label=self.sess.run([self.accuracy, self.output_prob_distribution, self.label], feed_dict={
                     self.x: batch[0], self.y_: batch[1], self.keep_prob:1.0})
                 print(datetime.now().isoformat(), 'step %d, training accuracy %g' % (i, train_accuracy))
+                for sample_idx in range(16):
+                    sample_str = 'sample_idx=%d, Output_Probability_Distribution = [' % sample_idx
+                    for class_idx in range(prob_dist.shape[1]):
+                        sample_str += ("%.3f," % (prob_dist[sample_idx][class_idx]))
+                    sample_str += ("] ")
+                    sample_str += ("Label = %d" % label[sample_idx])
+                    print sample_str
+
                 merged = self.sess.run(self.merged, feed_dict={
                     self.x: batch[0], self.y_: batch[1], self.keep_prob:1.0})
                 self.writer.add_summary(merged, i)
                 self.writer.flush()
-            self.train_step.run(session=self.sess, feed_dict={self.x: batch[0], self.y_: batch[1], self.keep_prob: 0.5})
+            self.sess.run(self.train_step, feed_dict={self.x: batch[0], self.y_: batch[1], self.keep_prob: 0.5})
 
     def test(self, mnist):
         acc_result = self.accuracy.eval(session=self.sess, feed_dict={
