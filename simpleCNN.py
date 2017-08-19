@@ -3,6 +3,7 @@ import os
 import os.path
 from mnist_deep import deepnn
 from datetime import datetime
+import numpy as np
 
 '''
 SimpleCNN is a wrapper class of MNIST CNN demo code
@@ -59,9 +60,10 @@ class SimpleCNN:
         print 'Re-Init the graph parameter'
  
     def train(self, mnist):
-        for i in range(2000):
-            batch = mnist.train.next_batch(1600)
+        for i in range(1100):
+            batch = mnist.train.next_batch(5000)
             if i % 100 == 0:
+                # Console debug output
                 train_accuracy, prob_dist, label=self.sess.run([self.accuracy, self.output_prob_distribution, self.label], feed_dict={
                     self.x: batch[0], self.y_: batch[1], self.keep_prob:1.0})
                 print(datetime.now().isoformat(), 'step %d, training accuracy %g' % (i, train_accuracy))
@@ -72,12 +74,49 @@ class SimpleCNN:
                     sample_str += ("] ")
                     sample_str += ("Label = %d" % label[sample_idx])
                     print sample_str
-
+                
+                # Tensorboard debug output
                 merged = self.sess.run(self.merged, feed_dict={
                     self.x: batch[0], self.y_: batch[1], self.keep_prob:1.0})
                 self.writer.add_summary(merged, i)
                 self.writer.flush()
+                
             self.sess.run(self.train_step, feed_dict={self.x: batch[0], self.y_: batch[1], self.keep_prob: 0.5})
+
+    # Filter out images with low SNR.
+    # The term 'low SNR' is defined as: in the probability distribution of this sample, the largest value is <= 0.7, while the 2nd largest value >= 0.15
+    # the raw images data (in shape of 1*784 vector), labels, and top 2 possibilities by CNN will be returned
+    # Parameter:
+    # train_or_test, 0 means train data, 1 means test data
+    def filterLowSNRSamples(self, mnist, train_or_test=0):
+        if train_or_test == 1:
+            data = mnist.test
+        else:
+            data = mnist.train
+        
+        resultList = []
+
+        for sample_idx in range(data.images.shape[0]):
+            prob_dist, label=self.sess.run([self.output_prob_distribution, self.label], feed_dict={
+                    self.x: np.reshape(data.images[sample_idx], (1, 784)), self.y_: np.reshape(data.labels[sample_idx], (1,10)), self.keep_prob:1.0})
+            # search for position of the largest value and the 2nd largest value
+            raw_prob_array = prob_dist[0]
+            top_1_pos = 0
+            top_2_pos = 0
+            for j in range(1, 10):
+                if (raw_prob_array[top_1_pos] < raw_prob_array[j]):
+                    top_1_pos = j
+
+                if j != top_1_pos and (raw_prob_array[top_2_pos] < raw_prob_array[j]):
+                    top_2_pos = j
+            
+            #Low SNR criteria
+            if raw_prob_array[top_1_pos] <= 0.7 and raw_prob_array[top_2_pos] >= 0.15:
+                resultList.append((sample_idx, data.images[sample_idx], label, top_1_pos, top_2_pos))
+
+            if (sample_idx % 1000 == 0):
+                print "DEBUG, current idx = %d, num_of_low_SNR = %d" % (sample_idx, len(resultList))
+        return resultList
 
     def test(self, mnist):
         acc_result = self.accuracy.eval(session=self.sess, feed_dict={
