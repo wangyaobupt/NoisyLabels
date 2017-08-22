@@ -99,17 +99,12 @@ class SimpleCNN:
         for sample_idx in range(data.images.shape[0]):
             prob_dist, label=self.sess.run([self.output_prob_distribution, self.label], feed_dict={
                     self.x: np.reshape(data.images[sample_idx], (1, 784)), self.y_: np.reshape(data.labels[sample_idx], (1,10)), self.keep_prob:1.0})
-            # search for position of the largest value and the 2nd largest value
-            raw_prob_array = prob_dist[0]
-            top_1_pos = 0
-            top_2_pos = 0
-            for j in range(1, 10):
-                if (raw_prob_array[top_1_pos] < raw_prob_array[j]):
-                    top_1_pos = j
-
-                if j != top_1_pos and (raw_prob_array[top_2_pos] < raw_prob_array[j]):
-                    top_2_pos = j
             
+            raw_prob_array = prob_dist[0]
+            
+            #search for position of the largest value and the 2nd largest value
+            top_1_pos , top_2_pos = findPosOfLargestTwoElement(raw_prob_array, 10)
+           
             #Low SNR criteria
             if raw_prob_array[top_1_pos] <= 0.7 and raw_prob_array[top_2_pos] >= 0.15:
                 resultList.append((sample_idx, data.images[sample_idx], label, top_1_pos, top_2_pos))
@@ -123,6 +118,23 @@ class SimpleCNN:
             self.x: mnist.test.images, self.y_: mnist.test.labels, self.keep_prob: 1.0})
         print(datetime.now().isoformat(), 'test accuracy %g' % acc_result)
         return acc_result
+
+def findPosOfLargestTwoElement(array, size):
+    top_1_pos = 0
+    top_2_pos = 0
+    for j in range(1, size):
+        if (array[top_1_pos] < array[j]):
+            top_1_pos = j
+        if j != top_1_pos and (array[top_2_pos] < array[j]):
+            top_2_pos = j
+    
+    if top_1_pos == top_2_pos:
+        top_2_pos = (top_1_pos + 1) % 10 
+        for j in range(10):
+            if j != top_1_pos and array[j] > array[top_2_pos]:
+                top_2_pos = j
+
+    return top_1_pos, top_2_pos
 
 def removeFileInDir(targetDir): 
     for file in os.listdir(targetDir): 
