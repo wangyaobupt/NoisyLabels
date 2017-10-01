@@ -3,6 +3,7 @@ import os
 import os.path
 from mnist_deep import deepnn
 from datetime import datetime
+import numpy as np
 
 '''
 SimpleCNN is a wrapper class of MNIST CNN demo code
@@ -39,7 +40,8 @@ class SimpleCNN:
             self.train_step = tf.train.AdamOptimizer(lr).minimize(cross_entropy)
 
         with tf.name_scope('accuracy'):
-            correct_prediction = tf.equal(tf.argmax(y_conv, 1), tf.argmax(self.y_, 1))
+            self.label = tf.argmax(self.y_, 1)
+            correct_prediction = tf.equal(tf.argmax(y_conv, 1), self.label)
             correct_prediction = tf.cast(correct_prediction, tf.float32)
             self.accuracy = tf.reduce_mean(correct_prediction)
             tf.summary.scalar('accuracy',self.accuracy)
@@ -71,25 +73,75 @@ class SimpleCNN:
         print 'Re-Init the graph parameter'
  
     def train(self, mnist):
-        for i in range(2000):
-            batch = mnist.train.next_batch(1000)
+        for i in range(1100):
+            batch = mnist.train.next_batch(5000)
             if i % 100 == 0:
-                train_accuracy = self.accuracy.eval(session=self.sess, feed_dict={
+                # Console debug output
+                train_accuracy, prob_dist, label=self.sess.run([self.accuracy, self.output_prob_distribution, self.label], feed_dict={
                     self.x: batch[0], self.y_: batch[1], self.keep_prob:1.0})
                 print(datetime.now().isoformat(), 'step %d, training accuracy %g' % (i, train_accuracy))
+
                 merged = \
                     self.sess.run(self.merged, feed_dict={
                     self.x: batch[0], self.y_: batch[1], self.keep_prob:1.0})
 
                 self.writer.add_summary(merged, i)
                 self.writer.flush()
-            self.train_step.run(session=self.sess, feed_dict={self.x: batch[0], self.y_: batch[1], self.keep_prob: 0.5})
+                
+            self.sess.run(self.train_step, feed_dict={self.x: batch[0], self.y_: batch[1], self.keep_prob: 0.5})
+
+    # Filter out images with low SNR.
+    # The term 'low SNR' is defined as: in the probability distribution of this sample, the largest value is <= 0.7, while the 2nd largest value >= 0.15
+    # the raw images data (in shape of 1*784 vector), labels, and top 2 possibilities by CNN will be returned
+    # Parameter:
+    # train_or_test, 0 means train data, 1 means test data
+    def filterLowSNRSamples(self, mnist, train_or_test=0):
+        if train_or_test == 1:
+            data = mnist.test
+        else:
+            data = mnist.train
+        
+        resultList = []
+
+        for sample_idx in range(data.images.shape[0]):
+            prob_dist, label=self.sess.run([self.output_prob_distribution, self.label], feed_dict={
+                    self.x: np.reshape(data.images[sample_idx], (1, 784)), self.y_: np.reshape(data.labels[sample_idx], (1,10)), self.keep_prob:1.0})
+            
+            raw_prob_array = prob_dist[0]
+            
+            #search for position of the largest value and the 2nd largest value
+            top_1_pos , top_2_pos = findPosOfLargestTwoElement(raw_prob_array, 10)
+           
+            #Low SNR criteria
+            if raw_prob_array[top_1_pos] <= 0.7 and raw_prob_array[top_2_pos] >= 0.15:
+                resultList.append((sample_idx, data.images[sample_idx], label, top_1_pos, top_2_pos))
+
+            if (sample_idx % 1000 == 0):
+                print "DEBUG, current idx = %d, num_of_low_SNR = %d" % (sample_idx, len(resultList))
+        return resultList
 
     def test(self, mnist):
         acc_result = self.accuracy.eval(session=self.sess, feed_dict={
             self.x: mnist.test.images, self.y_: mnist.test.labels, self.keep_prob: 1.0})
         print(datetime.now().isoformat(), 'test accuracy %g' % acc_result)
         return acc_result
+
+def findPosOfLargestTwoElement(array, size):
+    top_1_pos = 0
+    top_2_pos = 0
+    for j in range(1, size):
+        if (array[top_1_pos] < array[j]):
+            top_1_pos = j
+        if j != top_1_pos and (array[top_2_pos] < array[j]):
+            top_2_pos = j
+    
+    if top_1_pos == top_2_pos:
+        top_2_pos = (top_1_pos + 1) % 10 
+        for j in range(10):
+            if j != top_1_pos and array[j] > array[top_2_pos]:
+                top_2_pos = j
+
+    return top_1_pos, top_2_pos
 
 def removeFileInDir(targetDir): 
     for file in os.listdir(targetDir): 
